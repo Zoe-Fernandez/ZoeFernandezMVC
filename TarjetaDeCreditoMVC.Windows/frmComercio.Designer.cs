@@ -1,0 +1,307 @@
+﻿
+namespace TarjetaDeCreditoMVC.Windows
+{
+    partial class frmComercio
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Datos = new System.Windows.Forms.DataGridView();
+            this.cmnRazonSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmnPersonaDeContacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmnDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmnLocalidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmnProvincia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmnTelFijo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmnTelMovil = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmnCorreoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
+            this.tsbBorrar = new System.Windows.Forms.ToolStripButton();
+            this.tsbEditar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsbActualizar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsbCerrar = new System.Windows.Forms.ToolStripButton();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Datos)).BeginInit();
+            this.toolStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.Datos);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 47);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 403);
+            this.panel1.TabIndex = 19;
+            // 
+            // Datos
+            // 
+            this.Datos.AllowUserToAddRows = false;
+            this.Datos.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.Datos.ColumnHeadersHeight = 30;
+            this.Datos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cmnRazonSocial,
+            this.cmnPersonaDeContacto,
+            this.cmnDireccion,
+            this.cmnLocalidad,
+            this.cmnProvincia,
+            this.cmnTelFijo,
+            this.cmnTelMovil,
+            this.cmnCorreoElectronico});
+            this.Datos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Datos.Location = new System.Drawing.Point(0, 0);
+            this.Datos.Margin = new System.Windows.Forms.Padding(4);
+            this.Datos.MultiSelect = false;
+            this.Datos.Name = "Datos";
+            this.Datos.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Datos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.Datos.RowHeadersVisible = false;
+            this.Datos.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.Datos.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.Datos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Datos.Size = new System.Drawing.Size(800, 403);
+            this.Datos.TabIndex = 1;
+            // 
+            // cmnRazonSocial
+            // 
+            this.cmnRazonSocial.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cmnRazonSocial.HeaderText = "Razon social";
+            this.cmnRazonSocial.MinimumWidth = 6;
+            this.cmnRazonSocial.Name = "cmnRazonSocial";
+            this.cmnRazonSocial.ReadOnly = true;
+            // 
+            // cmnPersonaDeContacto
+            // 
+            this.cmnPersonaDeContacto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cmnPersonaDeContacto.HeaderText = "Persona de contacto";
+            this.cmnPersonaDeContacto.MinimumWidth = 6;
+            this.cmnPersonaDeContacto.Name = "cmnPersonaDeContacto";
+            this.cmnPersonaDeContacto.ReadOnly = true;
+            // 
+            // cmnDireccion
+            // 
+            this.cmnDireccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cmnDireccion.HeaderText = "Direccion";
+            this.cmnDireccion.MinimumWidth = 6;
+            this.cmnDireccion.Name = "cmnDireccion";
+            this.cmnDireccion.ReadOnly = true;
+            // 
+            // cmnLocalidad
+            // 
+            this.cmnLocalidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cmnLocalidad.HeaderText = "Localidad";
+            this.cmnLocalidad.MinimumWidth = 6;
+            this.cmnLocalidad.Name = "cmnLocalidad";
+            this.cmnLocalidad.ReadOnly = true;
+            // 
+            // cmnProvincia
+            // 
+            this.cmnProvincia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cmnProvincia.HeaderText = "Provincia";
+            this.cmnProvincia.MinimumWidth = 6;
+            this.cmnProvincia.Name = "cmnProvincia";
+            this.cmnProvincia.ReadOnly = true;
+            // 
+            // cmnTelFijo
+            // 
+            this.cmnTelFijo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cmnTelFijo.HeaderText = "Telefono fijo";
+            this.cmnTelFijo.MinimumWidth = 6;
+            this.cmnTelFijo.Name = "cmnTelFijo";
+            this.cmnTelFijo.ReadOnly = true;
+            // 
+            // cmnTelMovil
+            // 
+            this.cmnTelMovil.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cmnTelMovil.HeaderText = "Telefono movil";
+            this.cmnTelMovil.MinimumWidth = 6;
+            this.cmnTelMovil.Name = "cmnTelMovil";
+            this.cmnTelMovil.ReadOnly = true;
+            // 
+            // cmnCorreoElectronico
+            // 
+            this.cmnCorreoElectronico.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cmnCorreoElectronico.HeaderText = "Correo electronico";
+            this.cmnCorreoElectronico.MinimumWidth = 6;
+            this.cmnCorreoElectronico.Name = "cmnCorreoElectronico";
+            this.cmnCorreoElectronico.ReadOnly = true;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbNuevo,
+            this.tsbBorrar,
+            this.tsbEditar,
+            this.toolStripSeparator1,
+            this.tsbActualizar,
+            this.toolStripSeparator2,
+            this.tsbCerrar});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(800, 47);
+            this.toolStrip1.TabIndex = 18;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // tsbNuevo
+            // 
+            this.tsbNuevo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbNuevo.Image = global::TarjetaDeCreditoMVC.Windows.Properties.Resources.Nuevo;
+            this.tsbNuevo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbNuevo.Name = "tsbNuevo";
+            this.tsbNuevo.Size = new System.Drawing.Size(44, 44);
+            this.tsbNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbNuevo.Click += new System.EventHandler(this.tsbNuevo_Click);
+            // 
+            // tsbBorrar
+            // 
+            this.tsbBorrar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbBorrar.Image = global::TarjetaDeCreditoMVC.Windows.Properties.Resources.Delete;
+            this.tsbBorrar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbBorrar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbBorrar.Name = "tsbBorrar";
+            this.tsbBorrar.Size = new System.Drawing.Size(44, 44);
+            this.tsbBorrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbBorrar.Click += new System.EventHandler(this.tsbBorrar_Click);
+            // 
+            // tsbEditar
+            // 
+            this.tsbEditar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbEditar.Image = global::TarjetaDeCreditoMVC.Windows.Properties.Resources.Edit;
+            this.tsbEditar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbEditar.Name = "tsbEditar";
+            this.tsbEditar.Size = new System.Drawing.Size(44, 44);
+            this.tsbEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbEditar.Click += new System.EventHandler(this.tsbEditar_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 47);
+            // 
+            // tsbActualizar
+            // 
+            this.tsbActualizar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbActualizar.Image = global::TarjetaDeCreditoMVC.Windows.Properties.Resources.Update;
+            this.tsbActualizar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbActualizar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbActualizar.Name = "tsbActualizar";
+            this.tsbActualizar.Size = new System.Drawing.Size(44, 44);
+            this.tsbActualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbActualizar.Click += new System.EventHandler(this.tsbActualizar_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 47);
+            // 
+            // tsbCerrar
+            // 
+            this.tsbCerrar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbCerrar.Image = global::TarjetaDeCreditoMVC.Windows.Properties.Resources.Close;
+            this.tsbCerrar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbCerrar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbCerrar.Name = "tsbCerrar";
+            this.tsbCerrar.Size = new System.Drawing.Size(44, 44);
+            this.tsbCerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbCerrar.Click += new System.EventHandler(this.tsbCerrar_Click);
+            // 
+            // frmComercio
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.toolStrip1);
+            this.Name = "frmComercio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Comercio";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Load += new System.EventHandler(this.frmComercio_Load);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Datos)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView Datos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cmnRazonSocial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cmnPersonaDeContacto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cmnDireccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cmnLocalidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cmnProvincia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cmnTelFijo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cmnTelMovil;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cmnCorreoElectronico;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton tsbNuevo;
+        private System.Windows.Forms.ToolStripButton tsbBorrar;
+        private System.Windows.Forms.ToolStripButton tsbEditar;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton tsbActualizar;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton tsbCerrar;
+    }
+}

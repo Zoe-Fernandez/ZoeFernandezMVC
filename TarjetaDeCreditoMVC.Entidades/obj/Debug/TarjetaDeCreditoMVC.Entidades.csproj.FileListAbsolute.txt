@@ -1,0 +1,12 @@
+C:\Users\Zoe\Desktop\Marzo-Abril\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Entidades\bin\Debug\TarjetaDeCreditoMVC.Entidades.dll
+C:\Users\Zoe\Desktop\Marzo-Abril\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Entidades\bin\Debug\TarjetaDeCreditoMVC.Entidades.pdb
+C:\Users\Zoe\Desktop\Marzo-Abril\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Entidades\obj\Debug\TarjetaDeCreditoMVC.Entidades.csprojAssemblyReference.cache
+C:\Users\Zoe\Desktop\Marzo-Abril\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Entidades\obj\Debug\TarjetaDeCreditoMVC.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Zoe\Desktop\Marzo-Abril\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Entidades\obj\Debug\TarjetaDeCreditoMVC.Entidades.dll
+C:\Users\Zoe\Desktop\Marzo-Abril\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Entidades\obj\Debug\TarjetaDeCreditoMVC.Entidades.pdb
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Entidades\bin\Debug\TarjetaDeCreditoMVC.Entidades.dll
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Entidades\bin\Debug\TarjetaDeCreditoMVC.Entidades.pdb
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Entidades\obj\Debug\TarjetaDeCreditoMVC.Entidades.csprojAssemblyReference.cache
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Entidades\obj\Debug\TarjetaDeCreditoMVC.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Entidades\obj\Debug\TarjetaDeCreditoMVC.Entidades.dll
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Entidades\obj\Debug\TarjetaDeCreditoMVC.Entidades.pdb

@@ -1,0 +1,100 @@
+﻿@model TarjetaDeCreditoMVC.Entidades.ViewModels.CarteraDeConsumo.CarteraDeConsumoEditViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Nueva cartera de consumo</h2>
+
+
+@using (Html.BeginForm("Create", "CarterasDeConsumos", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @*<h4>Cartera de consumo</h4>*@
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.CarteraDeConsumoId, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.CarteraDeConsumoId, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CarteraDeConsumoId, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Descripcion, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LimiteDeCredito, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LimiteDeCredito, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LimiteDeCredito, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CostoDeRenovacion, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CostoDeRenovacion, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CostoDeRenovacion, "", new { @class = "text-danger" })
+            </div>
+
+            <h2>Foto del Producto</h2>
+
+            <div class="well">
+                <img id="imgSalida" src="@Url.Content($"~/Content/Imagenes/CarteraDeConsumo/{Model.Imagen}")" alt="Imagen" style="width: 50%">
+                <div class="caption">
+                    <p>@Model.Descripcion</p>
+                </div>
+                <span class="btn btn-default btn-file" id="file-input">
+                    @Html.TextBoxFor(modelo => modelo.ImagenFile, new { type = "file" })
+                </span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-success" />
+                @Html.ActionLink("Cancelar", "Index", "", new { @class = "btn btn-warning" })
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @*@Scripts.Render("~/bundles/jqueryval")*@
+
+    <script>
+        $(document).ready(function () {
+            $('#file-input').change(function (e) {
+                addImage(e);
+            });
+
+            function addImage(e) {
+                var file = e.target.files[0],
+                    imageType = /image.*/;
+
+                if (!file.type.match(imageType))
+                    return;
+
+                var reader = new FileReader();
+                reader.onload = fileOnload;
+                reader.readAsDataURL(file);
+            }
+
+            function fileOnload(e) {
+                var result = e.target.result;
+                $('#imgSalida').attr("src", result);
+            }
+
+        });
+    </script>
+}

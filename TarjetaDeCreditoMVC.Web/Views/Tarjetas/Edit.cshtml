@@ -1,0 +1,77 @@
+﻿@model TarjetaDeCreditoMVC.Entidades.ViewModels.Tarjeta.TarjetaEditViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Editar tarjeta</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    @*<h4>TarjetaEditViewModel</h4>*@
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @*<div class="form-group">
+            @Html.LabelFor(model => model.TarjetaId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TarjetaId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TarjetaId, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.NumeroDeTarjeta, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.NumeroDeTarjeta, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.NumeroDeTarjeta, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CarteraDeConsumoId)
+        @Html.DropDownListFor(model => model.CarteraDeConsumoId, new SelectList(Model.CarteraDeConsumo, "CarteraDeConsumoId", "Descripcion"), "Seleccione cartera de consumo", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CarteraDeConsumoId, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ClienteId)
+        @Html.DropDownListFor(model => model.ClienteId, new SelectList(Model.Clientes, "ClienteId", "NumeroDeDocumento"), "Seleccione DNI", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.ClienteId, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ValidaDesde, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.ValidaDesde, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ValidaDesde, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ValidaHasta, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.ValidaHasta, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ValidaHasta, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Vigente)
+        @Html.CheckBoxFor(model => model.Vigente)
+        @Html.ValidationMessageFor(model => model.Vigente, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Guardar" class="btn btn-success" />
+        @Html.ActionLink("Cancelar", "Index", "", new { @class = "btn btn-warning" })
+    </div>
+</div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

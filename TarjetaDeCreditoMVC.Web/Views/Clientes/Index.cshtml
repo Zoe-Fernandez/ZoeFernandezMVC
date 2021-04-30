@@ -1,0 +1,124 @@
+﻿@model TarjetaDeCreditoMVC.Entidades.ViewModels.Cliente.ClienteFilterListViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <a href="@Url.Action("Create","Clientes")" class="btn btn-primary" style="float:right">Nuevo</a>
+    <h2>Lista de clientes</h2>
+</div>
+<hr />
+@if (TempData["Msg"] != null)
+{
+    var msg = TempData["Msg"].ToString();
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Guardado correctamente</strong> @msg
+    </div>
+}
+<hr />
+<div class="row">
+    <div class="col-md-2">
+        <h4>Filtro:</h4>
+        <div class="list-group">
+            <div class="list-group">
+                @Html.ActionLink("Todos", "Index", null, new { @class = Request["provincia"] == null ? "list-group-item active" : "list-group-item" })
+                @foreach (var p in Model.Provincias)
+                {
+                    @Html.ActionLink(p.NombreProvincia, "Index", new { provincia = p.NombreProvincia }, new { @class = Request["provincia"] == p.NombreProvincia ? "list-group-item active" : "list-group-item" })}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10">
+        <table class="table table-bordered table-hover">
+            <tr>
+                @*<th>
+            @Html.DisplayNameFor(model => model.Clientes[0].ClienteId)
+        </th>*@
+                <th>
+                    @Html.DisplayNameFor(model => model.Clientes[0].Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Clientes[0].Apellido)
+                </th>
+                @*<th>
+                    @Html.DisplayNameFor(model => model.Clientes[0].TipoDeDocumento)
+                </th>*@
+                <th>
+                    @Html.DisplayNameFor(model => model.Clientes[0].NumeroDeDocumento)
+                </th>
+                @*<th>
+                    @Html.DisplayNameFor(model => model.Clientes[0].Direccion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Clientes[0].Localidad)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Clientes[0].Provincia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Clientes[0].TelefonoFijo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Clientes[0].TelefonoMovil)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Clientes[0].CorreoElectronico)
+                </th>*@
+                <th>
+                    @Html.DisplayNameFor(model => model.Clientes[0].Suspendido)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model.Clientes)
+            {
+        <tr>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.ClienteId)
+        </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.TipoDeDocumento)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroDeDocumento)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Localidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Provincia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefonoFijo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefonoMovil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CorreoElectronico)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Suspendido)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.ClienteId }, new { @class = "btn btn-warning" }) |
+                @Html.ActionLink("Eliminar", "Eliminar", new { id = item.ClienteId }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+            }
+
+
+        </table>
+    </div>
+</div>

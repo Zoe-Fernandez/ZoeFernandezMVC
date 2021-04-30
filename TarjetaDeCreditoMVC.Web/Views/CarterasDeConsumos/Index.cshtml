@@ -1,0 +1,57 @@
+﻿@model IEnumerable<TarjetaDeCreditoMVC.Entidades.ViewModels.CarteraDeConsumo.CarteraDeConsumoListViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div>
+    <a href="@Url.Action("Create","CarterasDeConsumos")" class="btn btn-primary" style="float:right">Nuevo</a>
+    <h2>Lista de carteras de consumos</h2>
+</div>
+<hr />
+@if (TempData["Msg"] != null)
+{
+    var msg = TempData["Msg"].ToString();
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Guardado correctamente</strong> @msg
+    </div>
+}
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Imagen)</th>
+        <th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LimiteDeCredito)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CostoDeRenovacion)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        <img src="@Url.Content($"~/Content/Imagenes/CarteraDeConsumo/{item.Imagen}")" style="height: 100px" class="img-thumbnail" />
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Descripcion)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.LimiteDeCredito)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CostoDeRenovacion)
+    </td>
+    <td>
+        @Html.ActionLink("Editar", "Edit", new { id = item.CarteraDeConsumoId }, new { @class = "btn btn-warning" }) |
+        @Html.ActionLink("Eliminar", "Delete", new { id = item.CarteraDeConsumoId }, new { @class = "btn btn-danger" })
+    </td>
+</tr>
+    }
+
+</table>

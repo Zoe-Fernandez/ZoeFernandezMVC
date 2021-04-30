@@ -1,0 +1,107 @@
+﻿@model TarjetaDeCreditoMVC.Entidades.ViewModels.Comercio.ComercioFilterListViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <a href="@Url.Action("Create","Comercios")" class="btn btn-primary" style="float:right">Nuevo</a>
+    <h2>Lista de comercios</h2>
+</div>
+<hr />
+@if (TempData["Msg"] != null)
+{
+    var msg = TempData["Msg"].ToString();
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Guardado correctamente</strong> @msg
+    </div>
+}
+<hr />
+<div class="row">
+    <div class="col-md-2">
+        <h4>Filtro:</h4>
+        <div class="list-group">
+            <div class="list-group">
+                @Html.ActionLink("Todos", "Index", null, new { @class = Request["provincia"] == null ? "list-group-item active" : "list-group-item" })
+                @foreach (var p in Model.Provincias)
+                {
+                    @Html.ActionLink(p.NombreProvincia, "Index", new { provincia = p.NombreProvincia }, new { @class = Request["provincia"] == p.NombreProvincia ? "list-group-item active" : "list-group-item" })}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10">
+        <table class="table table-bordered table-hover">
+            <tr>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.ComercioId)
+                    </th>*@
+                <th>
+                    @Html.DisplayNameFor(model => model.Comercios[0].RazonSocial)
+                </th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.PersonaDeContacto)
+                    </th>*@
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Direccion)
+                    </th>*@
+                <th>
+                    @Html.DisplayNameFor(model => model.Comercios[0].Localidad)
+                </th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Provincia)
+                    </th>*@
+                @*<th>
+                        @Html.DisplayNameFor(model => model.TelefonoFijo)
+                    </th>*@
+                @*<th>
+                        @Html.DisplayNameFor(model => model.TelefonoMovil)
+                    </th>*@
+                @*<th>
+                        @Html.DisplayNameFor(model => model.CorreoElectronico)
+                    </th>*@
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model.Comercios)
+            {
+                <tr>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.ComercioId)
+                        </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RazonSocial)
+                    </td>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.PersonaDeContacto)
+                        </td>*@
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.Direccion)
+                        </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Localidad)
+                    </td>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.Provincia)
+                        </td>*@
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.TelefonoFijo)
+                        </td>*@
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.TelefonoMovil)
+                        </td>*@
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.CorreoElectronico)
+                        </td>*@
+
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.ComercioId }, new { @class = "btn btn-warning" }) |
+                        @Html.ActionLink("Eliminar", "Eliminar", new { id = item.ComercioId }, new { @class = "btn btn-danger" })
+                    </td>
+                </tr>
+            }
+
+
+        </table>
+    </div>
+</div>

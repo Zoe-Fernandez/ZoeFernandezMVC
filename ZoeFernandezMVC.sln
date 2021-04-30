@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaDeCreditoMVC.Entidades", "TarjetaDeCreditoMVC.Entidades\TarjetaDeCreditoMVC.Entidades.csproj", "{8C9BBDB7-ABF0-44A3-9320-73764DCF4166}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaDeCreditoMVC.Datos", "TarjetasDeCreditoMVC.Datos\TarjetaDeCreditoMVC.Datos.csproj", "{4500C39B-089B-4476-BDC5-BFF3B9D7A78C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaDeCreditoMVC.Servicios", "TarjetaDeCreditoMVC.Servicios\TarjetaDeCreditoMVC.Servicios.csproj", "{A3DFC067-C0D4-4F9D-A3F3-CB4BFBC0BFDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaDeCreditoMVC.Windows", "TarjetaDeCreditoMVC.Windows\TarjetaDeCreditoMVC.Windows.csproj", "{C94E5A97-2E86-4631-9897-80B2F632878C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaDeCreditoMVC.Web", "TarjetaDeCreditoMVC.Web\TarjetaDeCreditoMVC.Web.csproj", "{B947D840-DC9F-466C-B0BD-5B750A066186}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaDeCreditoMVC.Mapeador", "TarjetaDeCreditoMVC.Mapeador\TarjetaDeCreditoMVC.Mapeador.csproj", "{E8951C80-E6C4-4429-A0FB-A4A13F09DE5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C9BBDB7-ABF0-44A3-9320-73764DCF4166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9BBDB7-ABF0-44A3-9320-73764DCF4166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9BBDB7-ABF0-44A3-9320-73764DCF4166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9BBDB7-ABF0-44A3-9320-73764DCF4166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4500C39B-089B-4476-BDC5-BFF3B9D7A78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4500C39B-089B-4476-BDC5-BFF3B9D7A78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4500C39B-089B-4476-BDC5-BFF3B9D7A78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4500C39B-089B-4476-BDC5-BFF3B9D7A78C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3DFC067-C0D4-4F9D-A3F3-CB4BFBC0BFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3DFC067-C0D4-4F9D-A3F3-CB4BFBC0BFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3DFC067-C0D4-4F9D-A3F3-CB4BFBC0BFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3DFC067-C0D4-4F9D-A3F3-CB4BFBC0BFDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C94E5A97-2E86-4631-9897-80B2F632878C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C94E5A97-2E86-4631-9897-80B2F632878C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C94E5A97-2E86-4631-9897-80B2F632878C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C94E5A97-2E86-4631-9897-80B2F632878C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B947D840-DC9F-466C-B0BD-5B750A066186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B947D840-DC9F-466C-B0BD-5B750A066186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B947D840-DC9F-466C-B0BD-5B750A066186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B947D840-DC9F-466C-B0BD-5B750A066186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8951C80-E6C4-4429-A0FB-A4A13F09DE5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8951C80-E6C4-4429-A0FB-A4A13F09DE5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8951C80-E6C4-4429-A0FB-A4A13F09DE5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8951C80-E6C4-4429-A0FB-A4A13F09DE5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52103D55-80E5-4DB2-A0E4-23142DCC763A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Mapeador\bin\Debug\TarjetaDeCreditoMVC.Mapeador.dll
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Mapeador\bin\Debug\TarjetaDeCreditoMVC.Mapeador.pdb
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Mapeador\bin\Debug\AutoMapper.dll
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Mapeador\bin\Debug\TarjetaDeCreditoMVC.Entidades.dll
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Mapeador\bin\Debug\TarjetaDeCreditoMVC.Entidades.pdb
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Mapeador\bin\Debug\AutoMapper.xml
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Mapeador\obj\Debug\TarjetaDeCreditoMVC.Mapeador.csprojAssemblyReference.cache
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Mapeador\obj\Debug\TarjetaDeCreditoMVC.Mapeador.csproj.CoreCompileInputs.cache
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Mapeador\obj\Debug\TarjetaDeCreditoMVC.Mapeador.csproj.CopyComplete
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Mapeador\obj\Debug\TarjetaDeCreditoMVC.Mapeador.dll
+C:\Users\Zoe\Desktop\Programa de tajetas de credito\ZoeFernandezMVC\TarjetaDeCreditoMVC.Mapeador\obj\Debug\TarjetaDeCreditoMVC.Mapeador.pdb

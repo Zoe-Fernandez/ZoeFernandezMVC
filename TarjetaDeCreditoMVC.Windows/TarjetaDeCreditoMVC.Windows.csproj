@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C94E5A97-2E86-4631-9897-80B2F632878C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TarjetaDeCreditoMVC.Windows</RootNamespace>
+    <AssemblyName>TarjetaDeCreditoMVC.Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCarteraDeConsumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarteraDeConsumo.Designer.cs">
+      <DependentUpon>frmCarteraDeConsumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarteraDeConsumoAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarteraDeConsumoAE.Designer.cs">
+      <DependentUpon>frmCarteraDeConsumoAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClienteAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClienteAE.Designer.cs">
+      <DependentUpon>frmClienteAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComercio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComercio.Designer.cs">
+      <DependentUpon>frmComercio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComercioAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComercioAE.Designer.cs">
+      <DependentUpon>frmComercioAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalidad.Designer.cs">
+      <DependentUpon>frmLocalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalidadAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalidadAE.Designer.cs">
+      <DependentUpon>frmLocalidadAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProvincia.Designer.cs">
+      <DependentUpon>frmProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProvinciaAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProvinciaAE.Designer.cs">
+      <DependentUpon>frmProvinciaAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoDeDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoDeDocumento.Designer.cs">
+      <DependentUpon>frmTipoDeDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoDeDocumentoAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoDeDocumentoAE.Designer.cs">
+      <DependentUpon>frmTipoDeDocumentoAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Helper.cs" />
+    <Compile Include="Mapeador\AutoMapperConfig.cs" />
+    <Compile Include="Ninject\Bindings.cs" />
+    <Compile Include="Ninject\DI.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCarteraDeConsumo.resx">
+      <DependentUpon>frmCarteraDeConsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCarteraDeConsumoAE.resx">
+      <DependentUpon>frmCarteraDeConsumoAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClienteAE.resx">
+      <DependentUpon>frmClienteAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComercio.resx">
+      <DependentUpon>frmComercio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComercioAE.resx">
+      <DependentUpon>frmComercioAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalidad.resx">
+      <DependentUpon>frmLocalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalidadAE.resx">
+      <DependentUpon>frmLocalidadAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProvincia.resx">
+      <DependentUpon>frmProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProvinciaAE.resx">
+      <DependentUpon>frmProvinciaAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoDeDocumento.resx">
+      <DependentUpon>frmTipoDeDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoDeDocumentoAE.resx">
+      <DependentUpon>frmTipoDeDocumentoAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carteraConsumo_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documento_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Localidad_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\provincia_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarjetas_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TarjetaDeCreditoMVC.Entidades\TarjetaDeCreditoMVC.Entidades.csproj">
+      <Project>{8c9bbdb7-abf0-44a3-9320-73764dcf4166}</Project>
+      <Name>TarjetaDeCreditoMVC.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TarjetaDeCreditoMVC.Mapeador\TarjetaDeCreditoMVC.Mapeador.csproj">
+      <Project>{e8951c80-e6c4-4429-a0fb-a4a13f09de5f}</Project>
+      <Name>TarjetaDeCreditoMVC.Mapeador</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TarjetaDeCreditoMVC.Servicios\TarjetaDeCreditoMVC.Servicios.csproj">
+      <Project>{a3dfc067-c0d4-4f9d-a3f3-cb4bfbc0bfda}</Project>
+      <Name>TarjetaDeCreditoMVC.Servicios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TarjetasDeCreditoMVC.Datos\TarjetaDeCreditoMVC.Datos.csproj">
+      <Project>{4500c39b-089b-4476-bdc5-bff3b9d7a78c}</Project>
+      <Name>TarjetaDeCreditoMVC.Datos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

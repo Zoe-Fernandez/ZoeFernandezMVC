@@ -1,0 +1,75 @@
+﻿@model TarjetaDeCreditoMVC.Entidades.ViewModels.Tarjeta.TarjetaListViewModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Eliminar tarjeta</h2>
+
+<h3>¿Esta seguro de querer eliminar este registro de "Tarjetas"?</h3>
+<div>
+    @*<h4>ComercioListViewModel</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+                @Html.DisplayNameFor(model => model.ComercioId)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ComercioId)
+            </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroDeTarjeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroDeTarjeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValidaDesde)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValidaDesde)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValidaHasta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValidaHasta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vigente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vigente)
+        </dd>
+
+       
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.TarjetaId)
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+            @Html.ActionLink("Cancelar", "Index", "", new { @class = "btn btn-warning" })
+        </div>
+    }
+</div>
